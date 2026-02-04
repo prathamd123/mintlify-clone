@@ -7,8 +7,28 @@
     --primary-color: #08090A;
     --secondary-color: #F6F7F7;
     --secondary-light-color: #EAEAEA;
-
+    --bg-white: #FFFFFF;
+    --text-main: #08090A;
+    --text-muted: #08090acc;
+    --border-color: #efefef;
+    --feature-item-border: #efefef;
+    --footer-bg: #fff;
+    --icon-color: #0C8C5E;
 }
+
+[data-theme="dark"] {
+    --primary-color: #ffffff;
+    --secondary-color: #0b0c0d;
+    --secondary-light-color: #1f2123;
+    --bg-white: #0f1112;
+    --text-main: #ffffff;
+    --text-muted: #a1a1a1;
+    --border-color: #1f2123;
+    --feature-item-border: #1f2123;
+    --footer-bg: #0f1112;
+    --icon-color: #18E299;
+}
+
 
 * {
     margin: 0;
@@ -201,7 +221,7 @@ nav .nav-items .nav-logo a svg {
 
 /* brands-list */
 #brands {
-    background: #FFFFFF;
+    background: var(--bg-white);
     padding: 120px 0px;
 }
 
@@ -247,7 +267,7 @@ nav .nav-items .nav-logo a svg {
     font-size: 40px;
     font-weight: 600;
     line-height: 44px;
-    color: #08090A;
+    color: var(--text-main);
     display: inline-block;
     margin-bottom: 20px;
 }
@@ -260,7 +280,7 @@ nav .nav-items .nav-logo a svg {
 
 .feature-content p {
     font-size: 16px;
-    color: #08090acc;
+    color: var(--text-muted);
     display: inline-block;
     margin-bottom: 40px;
 }
@@ -585,7 +605,7 @@ nav .nav-items .nav-logo a svg {
 
 /* footer */
 footer{
-    background: #fff;
+    background: var(--footer-bg);
 }
 .footer-area{
     width: 1150px;
@@ -594,7 +614,7 @@ footer{
     border-right: 1px solid #efefef;
 }
 .footer-info{
-    border-bottom: 1px solid #efefef;
+    border-bottom: 1px solid var(--border-color);
     padding: 60px 30px 20px 30px;
     display: flex;
     align-items: center;
